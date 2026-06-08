@@ -9,9 +9,9 @@
 body {
   font-family: 'GFS Neohellenic', sans-serif;
   background-color: #F9F9F9;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
-  overflow: hidden;
+  overflow: auto;
   background: linear-gradient(90deg,
     #0A3D62,   /* Blu profondo */
     #2C82C9,   /* Azzurro medio */
@@ -136,7 +136,7 @@ header h1 {
   box-sizing: border-box;
 }
 
-/* Overlay scuro dietro l’accordion aperto */
+/* Overlay scuro dietro l'accordion aperto */
 .overlay {
   display: none;
   position: fixed;
