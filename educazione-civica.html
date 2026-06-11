@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="it" class="scroll-smooth">
 <head>
@@ -10,12 +11,10 @@
         body {
             font-family: 'Segoe UI', system-ui, sans-serif;
         }
-
-        /* Nuova sezione titolo ridotta e con colore slate/lavagna */
+        /* Sezione titolo in colore slate/lavagna */
         .hero-bg {
-            background: linear-gradient(rgba(51, 65, 85, 0.8), rgba(51, 65, 85, 0.9)), url('https://images.unsplash.com/photo-1580130684518-8a5c1b8c0c5b?ixlib=rb-4.0.3&auto=format&fit=crop&q=80') cent[...]
+            background: linear-gradient(rgba(51, 65, 85, 0.8), rgba(51, 65, 85, 0.9)), url('https://images.unsplash.com/photo-1580130684518-8a5c1b8c0c5b?ixlib=rb-4.0.3&auto=format&fit=crop&q=80') center/cover no-repeat;
         }
-
         .nav-link {
             position: relative;
         }
@@ -32,7 +31,6 @@
         .nav-link:hover::after {
             width: 100%;
         }
-
         .article-box {
             background: linear-gradient(145deg, #ffffff, #f9fafb);
             border-left: 5px solid #16a34a;
@@ -41,7 +39,6 @@
 </head>
 <body class="bg-slate-50 text-gray-800 antialiased">
 
-    <!-- HERO SECTION RIDOTTA E CAMBIATA DI COLORE -->
     <header class="hero-bg text-white py-12 text-center shadow-md">
         <div class="max-w-4xl mx-auto px-6">
             <h1 class="text-4xl md:text-5xl font-black tracking-tight mb-2">EDUCATI</h1>
@@ -51,7 +48,6 @@
         </div>
     </header>
 
-    <!-- NAVIGAZIONE STICKY -->
     <nav class="sticky top-0 bg-white/90 backdrop-blur-md shadow-sm border-b border-slate-100 z-50">
         <div class="max-w-7xl mx-auto px-6">
             <ul class="flex flex-wrap justify-center gap-x-6 gap-y-2 py-4 text-xs font-bold tracking-wider text-slate-600">
@@ -69,65 +65,40 @@
         </div>
     </nav>
 
-    <!-- CONTENUTO PRINCIPALE -->
     <main class="max-w-6xl mx-auto px-6 py-16 space-y-28">
 
-        <!-- STORIA -->
         <section id="storia" class="grid md:grid-cols-12 gap-12 items-start scroll-mt-24">
             <div class="md:col-span-4 sticky top-24">
                 <h2 class="text-3xl font-black text-slate-900 mb-2">STORIA</h2>
                 <p class="text-lg text-slate-500 font-medium">La Nascita della Repubblica</p>
-            </div>
-            
+            </div>                        
             <div class="md:col-span-8 bg-white rounded-2xl border border-slate-100 p-8 md:p-10 shadow-sm hover:shadow-md transition">
                 <div class="article-box p-6 rounded-r-xl mb-8">
                     <h3 class="text-xl font-bold text-slate-900 mb-3">Articolo 1</h3>
                     <blockquote class="italic text-slate-600 leading-relaxed">
                         «L'Italia è una Repubblica democratica, fondata sul lavoro. La sovranità appartiene al popolo, che la esercita nelle forme e nei limiti della Costituzione.»
                     </blockquote>
-                </div>
-                <div class="text-slate-600 leading-relaxed space-y-4">
-	    <p class="text-gray-700 leading-relaxed mt-4 mb-6">
-            La Repubblica Italiana nasce ufficialmente il 2 giugno 1946,
-            una data fondamentale nella storia del Paese. In quel giorno
-            gli italiani furono chiamati a scegliere, attraverso un
-            referendum istituzionale, tra monarchia e repubblica.
-            Dopo oltre ottant'anni di Regno d'Italia sotto la dinastia
-            dei Savoia, il popolo scelse la forma repubblicana di governo.
-            
-            Il referendum si svolse in un clima di grande cambiamento
-            politico e sociale, dopo la caduta del regime fascista di
-            <b>Benito Mussolini</b> e la fine della Seconda guerra mondiale.
-            L'Italia usciva da anni difficili segnati dalla dittatura,
-            dalle leggi razziali, dalla guerra civile e dalle distruzioni
-            causate dal conflitto. La scelta della Repubblica rappresentò
-            il desiderio di costruire uno Stato nuovo, fondato sulla
-            democrazia, sulla libertà e sulla partecipazione dei cittadini.
-
-            Il 2 giugno 1946 fu anche una data storica perché, per la
-            prima volta in Italia, votarono anche le donne. Il <b>suffragio</b>
-            universale segnò un importante passo avanti verso l'uguaglianza
-            e la piena partecipazione democratica di tutti i cittadini.
-
-            Nello stesso giorno venne eletta l' <b>Assemblea Costituente</b>,
-            incaricata di scrivere la nuova Costituzione italiana.
-            I lavori durarono circa diciotto mesi e coinvolsero
-            rappresentanti di diverse idee politiche e culturali,
-            accomunati dalla volontà di evitare il ritorno di una
-            dittatura. La Costituzione entrò ufficialmente in vigore
-            il 1° gennaio 1948.
-
-            La nuova Carta costituzionale si ispira ai valori nati
-            dalla Resistenza antifascista: libertà, giustizia,
-            uguaglianza e tutela dei diritti umani. Per questo motivo
-            la Costituzione italiana è considerata uno dei simboli
-            più importanti della rinascita democratica del Paese.
-  </p>
-                </div>
-            </div>
+                </div>                
+                <div class="text-slate-600 leading-relaxed space-y-4">	    
+                    <p class="text-gray-700 leading-relaxed">
+                        La Repubblica Italiana nasce ufficialmente il 2 giugno 1946, una data fondamentale nella storia del Paese. In quel giorno gli italiani furono chiamati a scegliere, attraverso un referendum istituzionale, tra monarchia e repubblica. Dopo oltre ottant'anni di Regno d'Italia sotto la dinastia dei Savoia, il popolo scelse la forma repubblicana di governo.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Il referendum si svolse in un clima di grande cambiamento politico e sociale, dopo la caduta del regime fascista di <b>Benito Mussolini</b> e la fine della Seconda guerra mondiale. L'Italia usciva da anni difficili segnati dalla dittatura, dalle leggi razziali, dalla guerra civile e dalle distruzioni causate dal conflitto. La scelta della Repubblica rappresentò il desiderio di costruire uno Stato neo, fondato sulla democrazia, sulla libertà e sulla partecipazione dei cittadini.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Il 2 giugno 1946 fu anche una data storica perché, per la prima volta in  Italia, votarono anche le donne. Il <b>suffragio</b> universale segnò un importante passo avanti verso l'uguaglianza e la piena partecipazione democratica di tutti i cittadini.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Nello stesso giorno venne eletta l'<b>Assemblea Costituente</b>, incaricata di scrivere la nuova Costituzione italiana. I lavori durarono circa diciotto mesi e coinvolsero rappresentanti di diverse idee politiche e culturali, accomunati dalla volontà di evitare il ritorno di una dittatura. La Costituzione entrò ufficialmente in vigore il 1° gennaio 1948.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        La nuova Carta costituzionale si ispira ai valori nati dalla Resistenza antifascista: libertà, giustizia, uguaglianza e tutela dei diritti umani. Per questo motivo la Costituzione italiana è considerata uno dei simboli più importanti della rinascita democratica del Paese.
+                    </p>
+                </div>            
+            </div>        
         </section>
 
-        <!-- FILOSOFIA -->
         <section id="filosofia" class="grid md:grid-cols-12 gap-12 items-start scroll-mt-24">
             <div class="md:col-span-8 md:order-1 bg-white rounded-2xl border border-slate-100 p-8 md:p-10 shadow-sm hover:shadow-md transition">
                 <div class="article-box p-6 rounded-r-xl mb-8">
@@ -135,280 +106,277 @@
                     <blockquote class="italic text-slate-600 leading-relaxed">
                         «La Repubblica riconosce e garantisce i diritti inviolabili dell'uomo, sia come singolo, sia nelle formazioni sociali ove si svolge la sua personalità.»
                     </blockquote>
-                </div>
+                </div>                
                 <div class="text-slate-600 leading-relaxed space-y-4">
-                    <p>Diversi filosofi nel corso della storia hanno dato la loro interpretazione sulla politica fondando teorie che hanno plasmato la nostra concezione di Stato. 
-                    <b>Thomas Hobbes</b> e  <b>John Locke</b> sono due filosofi contrattualisti considerati padri fondatori della filosofia politica. Da una parte Hobbes teorizza il Leviatano: uno Sta[...]
-                    <b>Karl Marx</b> analizza le strutture e sovrastrutture e la loro influenza sulla società, definendo lo stato come uno strumento di classe controllato, a suo tempo, dalla borghesi[...]
-                    <b> Hannah Arendt</b> ha dedicato la maggior parte della sua riflessione filosofica sul tema della politica, della democrazia diretta e sul ruolo dell'autorità, ciò si evince in [...]
-                </div>
-            </div>
+                    <p>
+                        Diversi filosofi nel corso della storia hanno dato la loro interpretazione sulla politica fondando teorie che hanno plasmato la nostra concezione di Stato. <b>Thomas Hobbes</b> e <b>John Locke</b> sono due filosofi contrattualisti considerati padri fondatori della filosofia politica. Da una parte Hobbes teorizza il Leviatano: uno Stato assoluto e centralizzato in cui i cittadini cedono i propri diritti in cambio di sicurezza. Al contrario, Locke pone le basi del liberalismo, sostenendo che lo Stato nasce proprio per garantire i diritti naturali e inviolabili dell'individuo, come la vita, la libertà e la proprietà.
+                    </p>                    
+                    <p>
+                        <b>Karl Marx</b> analizza le strutture e sovrastrutture e la loro influenza sulla società, definendo lo stato come uno strumento di classe controllato, a suo tempo, dalla borghesia per perpetuare il dominio economico sul proletariato, auspicando il superamento di questa dinamica attraverso la rivoluzione.
+                    </p>                    
+                    <p>
+                        <b>Hannah Arendt</b> ha dedicato la maggior parte della sua riflessione filosofica sul tema della politica, della democrazia diretta e sul ruolo dell'autorità, ciò si evince in particolare nella sua profonda analisi delle origini del totalitarismo, dove evidenzia come l'annullamento della sfera pubblica e dell'azione collettiva distrugga la dignità e l'essenza stessa dell'essere umano.
+                    </p>                
+                </div>            
+            </div>            
             <div class="md:col-span-4 md:order-2 sticky top-24 md:text-right">
                 <h2 class="text-3xl font-black text-slate-900 mb-2">FILOSOFIA</h2>
                 <p class="text-lg text-slate-500 font-medium">I Regimi Totalitari</p>
-            </div>
+            </div>        
         </section>
 
-        <!-- INGLESE -->
         <section id="inglese" class="grid md:grid-cols-12 gap-12 items-start scroll-mt-24">
             <div class="md:col-span-4 sticky top-24">
                 <h2 class="text-3xl font-black text-slate-900 mb-2">INGLESE</h2>
                 <p class="text-lg text-slate-500 font-medium">Regimi totalitari nella letteratura inglese</p>
-            </div>
-            
+            </div>                        
             <div class="md:col-span-8 bg-white rounded-2xl border border-slate-100 p-8 md:p-10 shadow-sm hover:shadow-md transition">
                 <div class="article-box p-6 rounded-r-xl mb-8">
                     <h3 class="text-xl font-bold text-slate-900 mb-3">Articolo 2</h3>
                     <blockquote class="italic text-slate-600 leading-relaxed">
                         «La Repubblica riconosce e garantisce i diritti inviolabili dell'uomo, sia come singolo, sia nelle formazioni sociali ove si svolge la sua personalità.»
                     </blockquote>
-                </div>
+                </div>                
                 <div class="text-slate-600 leading-relaxed space-y-4">
-                    <p> Il tema dei regimi totalitari è centrale nella letteratura inglese del Novecento, soprattutto attraverso i romanzi distopici, opere che descrivono società oppressive e prive [...]
-
-            Tra gli esempi più importanti vi è <i>Animal Farm</i> ("La fattoria degli animali") di <b>George Orwell</b>, un romanzo allegorico in cui un gruppo di animali si ribella al controllo deg[...]
-
-            Ancora più esplicito è il celebre romanzo <i>1984</i>, sempre di George Orwell, ambientato in un mondo distopico dominato dal controllo assoluto del "Grande Fratello". In questa società[...]
-
-            Attraverso queste opere, la letteratura inglese mette in guardia contro i pericoli della propaganda, della manipolazione e dell'abuso del potere, sottolineando l'importanza dei diritti e d[...]
-                </div>
-            </div>
-        </section>
-
- <!-- LETTERATURA ITALIANA -->
-<section id="letteratura" class="grid md:grid-cols-12 gap-12 items-start scroll-mt-24">
-    <div class="md:col-span-8 md:order-1 bg-white rounded-2xl border border-slate-100 p-8 md:p-10 shadow-sm hover:shadow-md transition">
-        
-        <!-- Blocco Articolo 3 -->
-        <div class="article-box p-6 rounded-r-xl mb-8">
-            <h3 class="text-xl font-bold text-slate-900 mb-2">Articolo 3</h3>
-            <blockquote class="italic text-slate-600">
-                "È compito della Repubblica rimuovere gli ostacoli di ordine economico e sociale, che, limitando di fatto la libertà e l'eguaglianza dei cittadini"
-            </blockquote>
-        </div>
-        
-        <!-- Paragrafo Verga e Pirandello -->
-        <div class="text-slate-600 leading-relaxed mb-8">
-            <p>
-                Con l'articolo 3 la repubblica si impegna a rimuovere gli ostacoli di ordine economico e sociale puntando alla libertà sostanziale dei cittadini. 
-                L'uguaglianza sostanziale e le pari opportunità è storicamente stato un grande problema per l'Italia derivante dalla "questione meridionale" mai risolta da alcun governo post unitari[...]
-                le grandi differenze economiche e sociali tra nord e sud hanno influenzato grandi autori come <b>Giovanni Verga</b> e <b>Luigi Pirandello</b> (soprattutto la prima parte della sua prod[...]
-                Entrambi gli autori criticano fortemente il fallimento delle promesse risorgimentali e il disastroso effetto sulle classi subalterne. L'articolo 3 risulta quindi fondamentale nella nos[...]
-            </p>
-        </div>
-        
-        <!-- Paragrafo Primo Levi -->
-        <div class="text-slate-600 leading-relaxed space-y-4">
-            <p>
-                <b>Primo Levi</b> affronta in più occasioni, anche se in modo implicito, il tema del diritto alla salute; ciò emerge in particolare in opere come Se questo è un uomo e Il sistema pe[...]
-            </p>
-            <p>
-                Nel celebre racconto "Carbonio", ultimo capitolo de Il sistema periodico, Levi utilizza un atomo di carbonio come metafora per descrivere la vita, la memoria e la materia. Più che[...]
-            </p>
-        </div>
-
-        <!-- Blocco Articolo 32 -->
-        <div class="article-box p-6 rounded-r-xl border-l-orange-500 mb-8">
-            <h3 class="text-xl font-bold text-slate-900 mb-2">Articolo 32</h3>
-            <blockquote class="italic text-slate-600 leading-relaxed">
-                «La Repubblica tutela la salute come fondamentale diritto dell'individuo e interesse della collettività.»
-            </blockquote>
-        </div>
-
-    </div>
-    
-    <!-- Colonna Laterale Titolo -->
-    <div class="md:col-span-4 md:order-2 sticky top-24 md:text-right">
-        <h2 class="text-3xl font-black text-slate-900 mb-2">LETTERATURA</h2>
-        <p class="text-lg text-slate-500 font-medium">Uguaglianza Sostanziale e Diritto alla Salute</p>
-    </div>
-</section>
-
-        <!-- EDUCAZIONE FISICA -->
-        <section id="educazione-fisica" class="grid md:grid-cols-12 gap-12 items-start scroll-mt-24">
-            <div class="md:col-span-4 sticky top-24">
-                <h2 class="text-3xl font-black text-slate-900 mb-2">EDUCAZIONE FISICA</h2>
-                <p class="text-lg text-slate-500 font-medium">Salute ed Inclusione</p>
-            </div>
-            
-            <div class="md:col-span-8 bg-white rounded-2xl border border-slate-100 p-8 md:p-10 shadow-sm hover:shadow-md transition">
-                <div class="space-y-6 mb-8">
-                    <div class="article-box p-6 rounded-r-xl">
-                        <h3 class="text-xl font-bold text-slate-900 mb-2">Articolo 32</h3>
-                        <blockquote class="italic text-slate-600">
-                            "La Repubblica tutela la salute come fondamentale diritto dell'individuo e interesse della collettività, e garantisce cure gratuite agli indigenti"
-                        </blockquote>
-                    </div>
-                    <div class="article-box p-6 rounded-r-xl border-l-orange-500">
-                        <h3 class="text-xl font-bold text-slate-900 mb-2">Articolo 3</h3>
-                        <blockquote class="italic text-slate-600">
-                            "È compito della Repubblica rimuovere gli ostacoli di ordine economico e sociale, che, limitando di fatto la libertà e l'eguaglianza dei cittadini"
-                        </blockquote>
-                    </div>
-                </div>
-                <div class="text-slate-600 leading-relaxed space-y-4">
-                    <p>L'educazione fisica non è solo una disciplina sportiva, ma un'attuazione pratica dei principi costituzionali. Il legame principale è con l'Articolo 32, che definisce la [...]
-                </p>
-
-                <p class="text-gray-700 leading-relaxed mt-4">
-                    L'attività sportiva scolastica abbatte le barriere economiche e culturali, diventando uno strumento di "uguaglianza sostanziale" come previsto dall'Articolo 3, garantendo a tu[...]
-                </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- SCIENZE -->
-        <section id="scienze" class="grid md:grid-cols-12 gap-12 items-start scroll-mt-24">
-            <div class="md:col-span-8 md:order-1 bg-white rounded-2xl border border-slate-100 p-8 md:p-10 shadow-sm hover:shadow-md transition">
-                <div class="article-box p-6 rounded-r-xl mb-8">
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Articolo 32</h3>
-                    <blockquote class="italic text-slate-600 leading-relaxed">
-                        «La Repubblica tutela la salute come fondamentale diritto dell'individuo e interesse della collettività.»
-                    </blockquote>
-                </div>
-                <div class="text-slate-600 leading-relaxed space-y-4">
-                    <p>L'articolo 32 della Costituzione italiana tutela la salute come fondamentale diritto dell'individuo e interesse della collettività. In questo contesto, la ricerca scientifi[...]
-                    Tuttavia, il progresso scientifico deve sempre rispettare principi etici e morali, affinché le nuove scoperte siano utilizzate a beneficio dell'uomo e non arrechino danni alla s[...]
-                    Non a caso, nel 1975, dopo le prime scoperte legate alle tecnologie del DNA ricombinante, si tenne la Conferenza di Asilomar, un importante incontro tra scienziati provenienti da t[...]
-                    Ancora oggi, il dibattito etico è centrale in numerosi ambiti scientifici e medici, come la clonazione, l'utilizzo delle cellule staminali, l'eutanasia, l'intelligenza artif[...]
-                </p>
-                </div>
-            </div>
-            <div class="md:col-span-4 md:order-2 sticky top-24 md:text-right">
-                <h2 class="text-3xl font-black text-slate-900 mb-2">SCIENZE</h2>
-                <p class="text-lg text-slate-500 font-medium">La Bioetica e la Ricerca</p>
-            </div>
-        </section>
-
-        <!-- STORIA DELL'ARTE -->
-        <section id="arte" class="grid md:grid-cols-12 gap-12 items-start scroll-mt-24">
-            <div class="md:col-span-4 sticky top-24">
-                <h2 class="text-3xl font-black text-slate-900 mb-2">STORIA DELL'ARTE</h2>
-                <p class="text-lg text-slate-500 font-medium">Tutela del Patrimonio</p>
-            </div>
-            
-            <div class="md:col-span-8 bg-white rounded-2xl border border-slate-100 p-8 md:p-10 shadow-sm hover:shadow-md transition">
-                <div class="article-box p-6 rounded-r-xl mb-8">
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Articolo 9</h3>
-                    <blockquote class="italic text-slate-600 leading-relaxed">
-                        «La Repubblica promuove lo sviluppo della cultura e la ricerca scientifica e tecnica. Tutela il paesaggio e il patrimonio storico e artistico della Nazione.»
-                    </blockquote>
-                </div>
-                <div class="text-slate-600 leading-relaxed space-y-4">
-                    <p>L'articolo 9 della Costituzione rappresenta una novità assoluta nel panorama costituzionale mondiale: per la prima volta, un testo fondamentale inserisce tra i principi fondame[...]
-
-                    Dall'antica Roma al Rinascimento, dal Barocco al patrimonio UNESCO, l'Italia custodisce un patrimonio artistico e culturale senza eguali. La sua tutela non è solo un dovere giurid[...]
-
-                    La storia dell'arte ci insegna che ogni opera è un documento vivente della civiltà che l'ha prodotta, e che la sua conservazione è essenziale per la memoria collettiva e l'ident[...]
-                </p></div>
-            </div>
-        </section>
-
-        <!-- INFORMATICA -->
-        <section id="informatica" class="grid md:grid-cols-12 gap-12 items-start scroll-mt-24">
-            <div class="md:col-span-8 md:order-1 bg-white rounded-2xl border border-slate-100 p-8 md:p-10 shadow-sm hover:shadow-md transition">
-                <div class="article-box p-6 rounded-r-xl mb-8">
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Articolo 12</h3>
-                    <blockquote class="italic text-slate-600 leading-relaxed">
-                        «La bandiera della Repubblica è il tricolore italiano: verde, bianco e rosso, a tre bande verticali di eguali dimensioni.»
-                    </blockquote>
-                </div>
-                <div class="text-slate-600 leading-relaxed space-y-4">
-                    <p> Il tema affrontato in informatica riguarda la conversione cromatica dalla codifica Pantone (tessile) alla codifica RGB (digitale) per riprodurre la bandiera italiana in formato[...]
-
-                    Questa conversione non è neutrale: i due sistemi si basano su concetti del tutto diversi, il Pantone lavora con pigmenti fisici, l'RGB con emissione di luce. Il risultato visivo p[...]
-                </p>
-                </div>
-            </div>
-            <div class="md:col-span-4 md:order-2 sticky top-24 md:text-right">
-                <h2 class="text-3xl font-black text-slate-900 mb-2">INFORMATICA</h2>
-                <p class="text-lg text-slate-500 font-medium">La Bandiera e i Sistemi Cromatici</p>
-            </div>
-        </section>
-
-        <!-- RELIGIONE -->
-        <section id="religione" class="grid md:grid-cols-12 gap-12 items-start scroll-mt-24">
-            <div class="md:col-span-4 sticky top-24">
-                <h2 class="text-3xl font-black text-slate-900 mb-2">RELIGIONE</h2>
-                <p class="text-lg text-slate-500 font-medium">Libertà di Culto</p>
-            </div>
-            
-            <div class="md:col-span-8 bg-white rounded-2xl border border-slate-100 p-8 md:p-10 shadow-sm hover:shadow-md transition">
-                <div class="article-box p-6 rounded-r-xl mb-8">
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Articolo 19</h3>
-                    <blockquote class="italic text-slate-600 leading-relaxed">
-                        «Tutti hanno diritto di professare liberamente la propria fede religiosa in qualsiasi forma, individuale o associata, di farne propaganda e di esercitarne in privato o in pubb[...]
-                    </blockquote>
-                </div>
-                <div class="text-slate-600 leading-relaxed space-y-4">
-                    <p>                    L'articolo 19 della Costituzione italiana garantisce la libertà di culto, riconoscendo a ogni persona il diritto di professare liberamente la propria reli[...]
-
-                    Questo principio è fondamentale in una società democratica, perché promuove il rispetto delle diverse credenze religiose e della libertà personale. La libertà di culto favoris[...]
-
-                </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- MATEMATICA E FISICA (CORRETTO CON ORIENTAMENTO INVERTITO) -->
-        <section id="matematica_e_fisica" class="grid md:grid-cols-12 gap-12 items-start scroll-mt-24">
-            <!-- Il contenuto ora è a sinistra (md:order-1) -->
-            <div class="md:col-span-8 md:order-1 bg-white rounded-2xl border border-slate-100 p-8 md:p-10 shadow-sm hover:shadow-md transition grid md:grid-cols-2 gap-8 items-center">
-                <div>
-                    <p class="text-slate-600 leading-relaxed mb-4">
-                         La matematica e la fisica permettono, attraverso la statistica, l'interpretazione e la costruzione di grafici. In questo caso, il grafico fa riferimento alle religioni più [...]
-                </p>
-                    <p class="text-slate-400 text-xs">
-                        Fonte: elaborazione su dati Fondazione ISMU ETS e dati anagrafici ISTAT (2025)
+                    <p>
+                        Il tema dei regimi totalitari è centrale nella letteratura inglese del Novecento, soprattutto attraverso i romanzi distopici, opere che descrivono società oppressive e prive di ogni libertà individuale, ponendosi in netto contrasto con i diritti umani fondamentali riconosciuti dalle democrazie moderne.
                     </p>
-                </div>
-                
-                <div class="bg-slate-50 rounded-xl p-4 border border-slate-100 flex justify-center items-center">
-                    <div class="w-full max-w-[240px]">
-                        <canvas id="religionChart"></canvas>
-                    </div>
-                </div>
-            </div>
+                    <p>
+                        Tra gli esempi più importanti vi è <i>Animal Farm</i> ("La fattoria degli animali") di <b>George Orwell</b>, un romanzo allegorico in cui un gruppo di animali si ribella al controllo degli umani per creare una società paritaria, che finisce tuttavia per trasformarsi in una dittatura spietata sotto la guida dei maiali, a dimostrazione di come il potere possa corrompere gli ideali iniziali.
+                    </p>
+                    <p>
+                        Ancora più esplicito è il celebre romanzo <i>1984</i>, sempre di George Orwell, ambientato in un mondo distopico dominato dal controllo assoluto del "Grande Fratello". In questa società la privacy è inesistente, il pensiero indipendente è considerato un crimine e persino la verità storica viene costantemente manipolata dal regime del Socing.
+                    </p>
+                    <p>
+                        Attraverso queste opere, la letteratura inglese mette in guardia contro i pericoli della propaganda, della manipolazione e dell'abuso del potere, sottolineando l'importance dei diritti e della vigilanza democratica da parte dei cittadini per evitare la perdita delle libertà personali.
+                    </p>                
+                </div>            
+            </div>        
+        </section>
 
-            <!-- Il titolo ora è a destra (md:order-2 e md:text-right) -->
-            <div class="md:col-span-4 md:order-2 sticky top-24 md:text-right">
-                <h2 class="text-3xl font-black text-slate-900 mb-2">MATEMATICA & FISICA</h2>
-                <p class="text-lg text-slate-500 font-medium">Analisi Statistica</p>
+        <section id="letteratura" class="grid md:grid-cols-12 gap-12 items-start scroll-mt-24">    
+            <div class="md:col-span-8 md:order-1 bg-white rounded-2xl border border-slate-100 p-8 md:p-10 shadow-sm hover:shadow-md transition">                
+                
+                <div class="article-box p-6 rounded-r-xl mb-8">            
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Articolo 3</h3>            
+                    <blockquote class="italic text-slate-600">                
+                        "È compito della Repubblica rimuovere gli ostacoli di ordine economico e sociale, che, limitando di fatto la libertà e l'eguaglianza dei cittadini"            
+                    </blockquote>        
+                </div>                
+                
+                <div class="text-slate-600 leading-relaxed mb-8">            
+                    <p>                
+                        Con l'articolo 3 la repubblica si impegna a rimuovere gli ostacoli di ordine economico e sociale puntando alla libertà sostanziale dei cittadini. L'uguaglianza sostanziale e le pari opportunità è storicamente stato un grande problema per l'Italia derivante dalla "questione meridionale" mai risolta da alcun governo post unitario; le grandi differenze economiche e sociali tra nord e sud hanno influenzato grandi autori come <b>Giovanni Verga</b> e <b>Luigi Pirandello</b> (soprattutto la prima parte della sua produzione, legata alla realtà siciliana). Entrambi gli autori criticano fortemente il fallimento delle promesse risorgimentali e il disastroso effetto sulle classi subalterne. L'articolo 3 risulta quindi fondamentale nella nostra storia per colmare quel divario sociale ampiamente documentato dalla letteratura della crisi.            
+                    </p>        
+                </div>                
+                
+                <div class="article-box p-6 rounded-r-xl border-l-orange-500 mb-8">            
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Articolo 32</h3>            
+                    <blockquote class="italic text-slate-600 leading-relaxed">                
+                        «La Repubblica tutela la salute come fondamentale diritto dell'individuo e interesse della collettività.»            
+                    </blockquote>        
+                </div>
+
+                <div class="text-slate-600 leading-relaxed space-y-4">            
+                    <p>                
+                        <b>Primo Levi</b> affronta in più occasioni, anche se in modo implicito, il tema del diritto alla salute; ciò emerge in particolare in opere come Se questo è un uomo e Il sistema periodico, dove la privazione del benessere fisico e psichico diventa lo strumento principale di annichilimento dell'essere umano nei campi di concentramento.            
+                    </p>            
+                    <p>                
+                        Nel celebre racconto "Carbonio", ultimo capitolo de Il sistema periodico, Levi utilizza un atomo di carbonio come metafora per descrivere la vita, la memoria e la materia. Più che una semplice trattazione scientifica, il testo celebra l'interconnessione di tutti gli esseri viventi, ricollegandosi al valore intrinseco della vita e della dignità biologica protetta dalla nostra Costituzione.            
+                    </p>        
+                </div>
+            </div>        
+            
+            <div class="md:col-span-4 md:order-2 sticky top-24 md:text-right">        
+                <h2 class="text-3xl font-black text-slate-900 mb-2">LETTERATURA</h2>        
+                <p class="text-lg text-slate-500 font-medium">Uguaglianza Sostanziale e Diritto alla Salute</p>    
             </div>
         </section>
 
+        <section id="educazione-fisica" class="grid md:grid-cols-12 gap-12 items-start scroll-mt-24">            
+            <div class="md:col-span-4 sticky top-24">                
+                <h2 class="text-3xl font-black text-slate-900 mb-2">EDUCAZIONE FISICA</h2>                
+                <p class="text-lg text-slate-500 font-medium">Salute ed Inclusione</p>            
+            </div>                        
+            <div class="md:col-span-8 bg-white rounded-2xl border border-slate-100 p-8 md:p-10 shadow-sm hover:shadow-md transition">                
+                <div class="space-y-6 mb-8">                    
+                    <div class="article-box p-6 rounded-r-xl">                        
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Articolo 32</h3>                        
+                        <blockquote class="italic text-slate-600">                            
+                            "La Repubblica tutela la salute come fondamentale diritto dell'individuo e interesse della collettività, e garantisce cure gratuite agli indigenti"                        
+                        </blockquote>                    
+                    </div>                    
+                    <div class="article-box p-6 rounded-r-xl border-l-orange-500">                        
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Articolo 3</h3>                        
+                        <blockquote class="italic text-slate-600">                            
+                            "È compito della Repubblica rimuovere gli ostacoli di ordine economico e sociale, che, limitando di fatto la libertà e l'eguaglianza dei cittadini"                        
+                        </blockquote>                    
+                    </div>                
+                </div>                
+                <div class="text-slate-600 leading-relaxed space-y-4">                    
+                    <p>
+                        L'educazione fisica non è solo una disciplina sportiva, ma un'attuazione pratica dei principi costituzionali. Il legame principale è con l'Articolo 32, che definisce la salute non come semplice assenza di malattia, ma come uno stato di completo benessere psicofisico da promuovere attraverso il movimento e sani stili di vita.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mt-4">                    
+                        L'attività sportiva scolastica abbatte le barriere economiche e culturali, diventando uno strumento di "uguaglianza sostanziale" come previsto dall'Articolo 3, garantendo a tutti l'accesso alla pratica motoria come mezzo di inclusione sociale e socializzazione.
+                    </p>                
+                </div>            
+            </div>        
+        </section>
+
+        <section id="scienze" class="grid md:grid-cols-12 gap-12 items-start scroll-mt-24">            
+            <div class="md:col-span-8 md:order-1 bg-white rounded-2xl border border-slate-100 p-8 md:p-10 shadow-sm hover:shadow-md transition">                
+                <div class="article-box p-6 rounded-r-xl mb-8">                    
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Articolo 32</h3>                    
+                    <blockquote class="italic text-slate-600 leading-relaxed">                        
+                        «La Repubblica tutela la salute come fondamentale diritto dell'individuo e interesse della collettività.»                    
+                    </blockquote>                </div>                
+                <div class="text-slate-600 leading-relaxed space-y-4">                    
+                    <p>
+                        L'articolo 32 della Costituzione italiana tutela la salute come fondamentale diritto dell'individuo e interesse della collettività. In questo contesto, la ricerca scientifica gioca un ruolo decisivo, poiché lo sviluppo della medicina, della genetica e delle biotecnologie permette di diagnosticare e curare patologie un tempo incurabili, migliorando l'aspettativa e la qualità della vita di tutti.
+                    </p>                    
+                    <p>
+                        Tuttavia, il progresso scientifico deve sempre rispettare principi etici e morali, affinché le nuove scoperte siano utilizzate a beneficio dell'uomo e non arrechino danni alla dignità individuale o rischi ambientali incontrollati.
+                    </p>                    
+                    <p>
+                        Non a caso, nel 1975, dopo le prime scoperte legate alle tecnologie del DNA ricombinante, si tenne la Conferenza di Asilomar, un importante incontro tra scienziati provenienti da tutto il mondo per discutere i potenziali rischi biologici e stabilire linee guida di sicurezza volontarie per la manipolazione genetica.
+                    </p>                    
+                    <p>
+                        Ancora oggi, il dibattito etico è centrale in numerosi ambiti scientifici e medici, come la clonazione, l'utilizzo delle cellule staminali, l'eutanasia e l'intelligenza artificiale applicata alla salute richiedendo un costante bilanciamento tra libertà di ricerca e tutela dei diritti fondamentali dell'essere umano.
+                    </p>                
+                </div>            
+            </div>            
+            <div class="md:col-span-4 md:order-2 sticky top-24 md:text-right">                
+                <h2 class="text-3xl font-black text-slate-900 mb-2">SCIENZE</h2>                
+                <p class="text-lg text-slate-500 font-medium">La Bioetica e la Ricerca</p>            
+            </div>        
+        </section>
+
+        <section id="arte" class="grid md:grid-cols-12 gap-12 items-start scroll-mt-24">            
+            <div class="md:col-span-4 sticky top-24">                
+                <h2 class="text-3xl font-black text-slate-900 mb-2">STORIA DELL'ARTE</h2>                
+                <p class="text-lg text-slate-500 font-medium">Tutela del Patrimonio</p>            
+            </div>                        
+            <div class="md:col-span-8 bg-white rounded-2xl border border-slate-100 p-8 md:p-10 shadow-sm hover:shadow-md transition">                
+                <div class="article-box p-6 rounded-r-xl mb-8">                    
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Articolo 9</h3>                    
+                    <blockquote class="italic text-slate-600 leading-relaxed">                        
+                        «La Repubblica promuove lo sviluppo della cultura e la ricerca scientifica e tecnica. Tutela il paesaggio e il patrimonio storico e artistico della Nazione.»                    
+                    </blockquote>                
+                </div>                
+                <div class="text-slate-600 leading-relaxed space-y-4">                    
+                    <p>
+                        L'articolo 9 della Costituzione rappresenta una novità assoluta nel panorama costituzionale mondiale: per la prima volta, un testo fondamentale inserisce tra i principi fondanti dello Stato la tutela del patrimonio artistico, storico e del paesaggio, legandoli strettamente all'identità culturale del Paese.
+                    </p>
+                    <p>
+                        Dall'antica Roma al Rinascimento, dal Barocco al patrimonio UNESCO, l'Italia custodisce un patrimonio artistico e culturale senza eguali. La sua tutela non è solo un dovere giuridico o conservativo, ma rappresenta una risorsa strategica per la crescita sociale, economica e formativa delle nuove generazioni.
+                    </p>
+                    <p>
+                        La storia dell'arte ci insegna che ogni opera è un documento vivente della civiltà che l'ha prodotta, e che la sua conservazione è essenziale per la memoria collettiva e l'identità nazionale, sancendo il diritto dei cittadini di godere liberamente della bellezza e della cultura.
+                    </p>                
+                </div>            
+            </div>        
+        </section>
+
+        <section id="informatica" class="grid md:grid-cols-12 gap-12 items-start scroll-mt-24">            
+            <div class="md:col-span-8 md:order-1 bg-white rounded-2xl border border-slate-100 p-8 md:p-10 shadow-sm hover:shadow-md transition">                
+                <div class="article-box p-6 rounded-r-xl mb-8">                    
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Articolo 12</h3>                    
+                    <blockquote class="italic text-slate-600 leading-relaxed">                        
+                        «La bandiera della Repubblica è il tricolore italiano: verde, bianco e rosso, a tre bande verticali di eguali dimensioni.»                    
+                    </blockquote>                
+                </div>                
+                <div class="text-slate-600 leading-relaxed space-y-4">                    
+                    <p> 
+                        Il tema affrontato in informatica riguarda la conversione cromatica dalla codifica Pantone (tessile) alla codifica RGB (digitale) per riprodurre la bandiera italiana in formato digitale in modo fedele e standardizzato sui diversi schermi e dispositivi elettronici.
+                    </p>
+                    <p>
+                        Questa conversione non è neutrale: i due sistemi si basano su concetti del tutto diversi, il Pantone lavora con pigmenti fisici su materiale (sintesi sottrattiva), l'RGB con emissione di luce su schermo (sintesi additiva). Il risultato visivo finale richiede pertanto precise tabelle di corrispondenza numerica per evitare alterazioni cromatiche del nostro simbolo nazionale.
+                    </p>                
+                </div>            
+            </div>            
+            <div class="md:col-span-4 md:order-2 sticky top-24 md:text-right">                
+                <h2 class="text-3xl font-black text-slate-900 mb-2">INFORMATICA</h2>                
+                <p class="text-lg text-slate-500 font-medium">La Bandiera e i Sistemi Cromatici</p>            
+            </div>        
+        </section>
+
+        <section id="religione" class="grid md:grid-cols-12 gap-12 items-start scroll-mt-24">            
+            <div class="md:col-span-4 sticky top-24">                
+                <h2 class="text-3xl font-black text-slate-900 mb-2">RELIGIONE</h2>                
+                <p class="text-lg text-slate-500 font-medium">Libertà di Culto</p>            
+            </div>                        
+            <div class="md:col-span-8 bg-white rounded-2xl border border-slate-100 p-8 md:p-10 shadow-sm hover:shadow-md transition">                
+                <div class="article-box p-6 rounded-r-xl mb-8">                    
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Articolo 19</h3>                    
+                    <blockquote class="italic text-slate-600 leading-relaxed">                        
+                        «Tutti hanno diritto di professare liberamente la propria fede religiosa in qualsiasi forma, individuale o associata, di farne propaganda e di esercitarne in privato o in pubblico il culto, purché non si tratti di riti contrari al buon costume.»                    
+                    </blockquote>                
+                </div>                
+                <div class="text-slate-600 leading-relaxed space-y-4">                    
+                    <p>                    
+                        L'articolo 19 della Costituzione italiana garantisce la libertà di culto, riconoscendo a ogni persona il diritto di professare liberamente la propria fede, sia in forma singola che comunitaria, tutelando il pluralismo religioso come pilastro dello Stato laico.
+                    </p>
+                    <p>                    
+                        Questo principio è fondamentale in una società democratica, perché promuove il rispetto delle diverse credenze religiose e della libertà personale. La libertà di culto favorisce l'integrazione, il dialogo interreligioso e l'abbattimento di pregiudizi, garantendo la pacifica convivenza in un contesto multiculturale.
+                    </p>                
+                </div>            
+            </div>        
+        </section>
+
+        <section id="matematica_e_fisica" class="grid md:grid-cols-12 gap-12 items-start scroll-mt-24">            
+            <div class="md:col-span-8 md:order-1 bg-white rounded-2xl border border-slate-100 p-8 md:p-10 shadow-sm hover:shadow-md transition grid md:grid-cols-2 gap-8 items-center">                
+                <div>                    
+                    <p class="text-slate-600 leading-relaxed mb-4">                         
+                        La matematica e la fisica permettono, attraverso la statistica, l'interpretazione e la costruzione di grafici. In questo caso, il grafico fa riferimento alle religioni più diffuse tra gli stranieri residenti in Italia, offrendo una rappresentazione quantitativa immediata e oggettiva del pluralismo culturale e della libertà di culto analizzata nelle altre discipline.
+                    </p>                    
+                    <p class="text-slate-400 text-xs">                        
+                        Fonte: elaborazione su dati Fondazione ISMU ETS e dati anagrafici ISTAT (2025)                    
+                    </p>                
+                </div>                                
+                <div class="bg-slate-50 rounded-xl p-4 border border-slate-100 flex justify-center items-center">                    
+                    <div class="w-full max-w-[240px]">                        
+                        <canvas id="religionChart"></canvas>                    
+                    </div>                
+                </div>            
+            </div>            
+            <div class="md:col-span-4 md:order-2 sticky top-24 md:text-right">                
+                <h2 class="text-3xl font-black text-slate-900 mb-2">MATEMATICA & FISICA</h2>                
+                <p class="text-lg text-slate-500 font-medium">Analisi Statistica</p>            
+            </div>        
+        </section>
     </main>
 
-    <footer class="bg-slate-900 text-slate-400 text-center py-8 text-sm border-t border-slate-800">
-        <p>2026 EDUCATI - Daniele Angellotti</p>
+    <footer class="bg-slate-900 text-slate-400 text-center py-8 text-sm border-t border-slate-800">        
+        <p>2026 EDUCATI - Daniele Angellotti</p>    
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-        const canvas = document.getElementById('religionChart');
-        new Chart(canvas, {
-            type: 'pie',
-            data: {
-                labels: ['Musulmani', 'Cristiani ortodossi', 'Cattolici', 'Altre confessioni cristiane', 'Buddisti', 'Induisti', 'Sikh'],
-                datasets: [{
-                    data: [1700000, 1500000, 900000, 370000, 180000, 120000, 90000],
-                    backgroundColor: ['#16a34a', '#2563eb', '#dc2626', '#0ea5e9', '#f59e0b', '#a855f7', '#ef4444']
-                }]
-            },
-            options: {
-                responsive: true,
-                plugins: {
-                    legend: {
-                        position: 'bottom',
-                        labels: {
-                            boxWidth: 10,
-                            padding: 10,
-                            font: { size: 10 }
-                        }
-                    }
-                }
-            }
-        });
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>    
+    <script>        
+        const canvas = document.getElementById('religionChart');        
+        new Chart(canvas, {            
+            type: 'pie',            
+            data: {                
+                labels: ['Musulmani', 'Cristiani ortodossi', 'Cattolici', 'Altre confessioni cristiane', 'Buddisti', 'Induisti', 'Sikh'],                
+                datasets: [{                    
+                    data: [1700000, 1500000, 900000, 370000, 180000, 120000, 90000],                    
+                    backgroundColor: ['#16a34a', '#2563eb', '#dc2626', '#0ea5e9', '#f59e0b', '#a855f7', '#ef4444']                
+                }]            
+            },            
+            options: {                
+                responsive: true,                
+                plugins: {                    
+                    legend: {                        
+                        position: 'bottom',                        
+                        labels: {                            
+                            boxWidth: 10,                            
+                            padding: 10,                            
+                            font: { size: 10 }                        
+                        }                    
+                    }                
+                }            
+            }        
+        });    
     </script>
 </body>
 </html>
